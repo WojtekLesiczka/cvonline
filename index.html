@@ -14,6 +14,9 @@
         <div class="brand-name">
           Wojciech Lesiczka
         </div>
+        <button class="hamburger-btn" aria-label="Open navigation menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
         <div class="nav-links">
           <a href="#home">Home</a>
           <a href="#skills">Skills</a>
@@ -23,7 +26,8 @@
         </div>
       </div>
     </nav>
-  </header>
+</header>
+
   <main class="container" id="container">
     
     <section class="intro-container animate-on-scroll" id="home">
@@ -229,25 +233,26 @@
       <section class="contact-section animate-on-scroll" id="contact">
         <h2>Contact</h2>
         <div class="contact-container">
-          <div class="contact-image">
-            <img src="image 9.png" alt="Contact Image">
-          </div>
-          <div class="contact-form">      
-            <form>
-              <div class="form-group">
-                <input type="text" id="name" placeholder="Name" required>
-              </div>
-              <div class="form-group">
-                <input type="email" id="email" placeholder="E-mail" required>
-              </div>
-              <div class="form-group">
-                <textarea id="message" placeholder="Message" required></textarea>
-              </div>
-              <button type="submit" class="send-btn">Send</button>
-            </form>
-          </div>
+            <div class="contact-image">
+                <img src="image 9.png" alt="Contact Image">
+            </div>
+            <div class="contact-form">
+                <form action="mailto:wojteklesiczka@onet.eu" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="send-btn">Send</button>
+                </form>
+            </div>
         </div>
-      </section>
+    </section>
+    
       
     
   </main>
@@ -343,6 +348,11 @@
         element.classList.add('visible');
       }, 20); // Short delay to ensure re-triggering of the CSS animation
     }
+    document.querySelector('.hamburger-btn').addEventListener('click', function() {
+  var links = document.querySelector('.nav-links');
+  links.classList.toggle('nav-open'); // Dodaj/Usuń klasę 'nav-open'
+});
+
   </script>
   
 </body>

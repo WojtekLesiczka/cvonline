@@ -3,10 +3,10 @@ body {
     background-image: url('Background\ 4.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Ustawienie tła, aby pozostało nieruchome */
-    margin: 0; /* Zresetowanie marginesu */
-    padding: 0; /* Zresetowanie paddingu*/
-    margin-top: 60px; /* Dodaj margines do góry, aby przesunąć zawartość strony w dół */
+    background-attachment: fixed; 
+    margin: 0; 
+    padding: 0; 
+    margin-top: 60px; 
 }
 
 .navbar {
@@ -38,7 +38,7 @@ body {
     padding: 5px 15px;
     border-radius: 5px;
     transition: background-color 0.3s;
-    font-weight: bold; /* Pogrubienie tekstu */
+    font-weight: bold; 
 
 }
 
@@ -52,36 +52,36 @@ body {
     align-items: center;
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.5);
-    width: 100%; /* Utrzymaj szerokość na 100% kontenera */
-    max-width: 1200px; /* Maksymalna szerokość, ale to nie powinno zmniejszać elementu */
-    min-height: 150px; /* Ustaw minimalną wysokość, aby zapewnić widoczność elementu */
+    width: 100%; 
+    max-width: 1200px; 
+    min-height: 150px; 
     border: 4px solid transparent;
-    border-color: #c584d0; /* Uproszczono do jednej linii */
-    overflow: hidden; /* Nie pokazuje zawartości poza granicami elementu */
-    margin: 20px auto; /* Dodajemy margines górny i dolny oraz automatyczne wyśrodkowanie poziome */
-    padding: 20px; /* Dodajemy wewnętrzne odstępy dla lepszego rozmieszczenia zawartości */
-    box-sizing: border-box; /* Włącza tradycyjne box-model, gdzie padding i border nie rozszerzają elementu */
+    border-color: #c584d0;
+    overflow: hidden; 
+    margin: 20px auto;
+    padding: 20px; 
+    box-sizing: border-box;
 }
 
 
 .stat-item {
-    flex: 1; /* Rozciąga elementy, aby wypełniały dostępną przestrzeń */
-    margin: 0 10px; /* Odstępy między elementami */
+    flex: 1; 
+    margin: 0 10px; 
     background-clip: padding-box;
     border: double 4px transparent;
-    text-align: center; /* Tekst wyśrodkowany w poziomie */
+    text-align: center; 
 }
 
 .stat-item h3 {
     font-size: 2.5em;
-    color: #ffffff; /* Kolor tekstu liczbowego */
-    margin-bottom: 0.3em; /* Odstęp między liczbą a opisem */
+    color: #ffffff;
+    margin-bottom: 0.3em; 
 }
 
 .stat-item p {
     font-size: 1.2em;
-    color: #ffffff; /* Kolor tekstu opisowego */
-    letter-spacing: 1px; /* Rozstaw liter */
+    color: #ffffff; 
+    letter-spacing: 1px; 
 }
 
 @keyframes spinNumber {
@@ -91,13 +91,13 @@ body {
 
 .stat-item h3 {
     display: inline-block;
-    overflow: hidden; /* Hides anything that goes beyond the bounds of the number's container */
-    height: 1em; /* Restricts height to the size of one line */
+    overflow: hidden; 
+    height: 1em;
 }
 
 .number-container {
     display: inline-block;
-    animation: spinNumber 0.5s ease-in-out forwards; /* Adjust timing to suit your preference */
+    animation: spinNumber 0.5s ease-in-out forwards; 
 }
 
 
@@ -111,7 +111,7 @@ body {
 
 .skills img {
     padding: 10px;
-    width: 50px; /* or the size you prefer */
+    width: 50px; 
     transition: transform 0.3s;
 }
 
@@ -120,26 +120,50 @@ body {
 }
 .brand-name {
     font-size: 1.5em;
-    margin-left: 20px; /* Dodane, aby umieścić imię i nazwisko na lewej stronie */
+    margin-left: 20px; 
     background: linear-gradient(to right, #ffffff, #eb78ff, #da00ff);
     -webkit-background-clip: text;
     color: transparent;
     display: inline;
     white-space: nowrap;
     overflow: hidden;
-    font-weight: bold; /* Pogrubienie tekstu */
+    font-weight: bold; 
 }
 
 
 
 @media (max-width: 768px) {
-    .stats {
-        flex-direction: column;
-    }
+  .stats {
+      flex-direction: column;
+      align-items: center;
+      margin: 20px auto;
+      padding: 20px;
+      box-sizing: border-box;
+      min-height: 600px;
+  }
+
+  .stat-item {
+      width: 100%; 
+      margin: 10px 0; 
+      border: 2px solid #c584d0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      text-align: center;
+  }
+
+  .stat-item h3 {
+      font-size: 1.5em; 
+      margin-bottom: 0.3em; 
+  }
+
+  .stat-item p {
+      font-size: 1em; 
+  }
 }
+
 .container {
     max-width: 1000px;
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,16 +180,16 @@ body {
 }
 
 .intro {
-    color: #fff; /* Biały tekst, który będzie miał nałożony gradient */
+    color: #fff; 
 }
 
 .intro h1 {
-    font-size: 4em; /* Duży rozmiar tekstu dla h1 */
-    margin-bottom: 0.0em; /* Odstęp pomiędzy h1 a h2 */
-    font-weight: bold; /* Pogrubienie tekstu */
-    background: -webkit-linear-gradient(135deg, #7B1FA2, #E1BEE7); /* Gradient dla tekstu */
+    font-size: 4em; 
+    margin-bottom: 0.0em; 
+    font-weight: bold; 
+    background: -webkit-linear-gradient(135deg, #7B1FA2, #E1BEE7); 
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Przezroczysty kolor tekstu, aby pokazać gradient */
+    -webkit-text-fill-color: transparent; 
     margin-top: 10px;
 }
 
@@ -175,14 +199,14 @@ body {
 }
 
 .intro p {
-    font-size: 1.5em; /* Rozmiar tekstu dla paragrafu */
-    max-width: 466px; /* Maksymalna szerokość paragrafu */
-    margin: 0 auto; /* Automatyczne wyśrodkowanie paragrafu */
+    font-size: 1.5em;
+    max-width: 466px; 
+    margin: 0 auto; 
 }
 
 
 .profile-and-skills {
-    width: 50%; /* Adjust if necessary */
+    width: 50%; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -216,8 +240,8 @@ body {
 }
 
 .skills img {
-    width: 40px; /* Adjust if necessary */
-    height: 40px; /* Adjust if necessary */
+    width: 40px; 
+    height: 40px; 
 }
 
 @media (max-width: 768px) {
@@ -228,16 +252,16 @@ body {
 
     .intro, .profile-and-skills {
         width: 100%;
+        padding: 3rem;
     }
 
     .skills {
         justify-content: space-around;
     }
 }
-/* Ukrywa pasek przewijania */
 ::-webkit-scrollbar {
-    width: 0px; /* Ustaw szerokość na 0, aby pasek przewijania był niewidoczny */
-    background: transparent; /* Tło transparentne, czyli przezroczyste */
+    width: 0px; 
+    background: transparent; 
 }
 
 .skills-section {
@@ -258,7 +282,7 @@ body {
   
   .skills-section h2 {
     font-size: 2em;
-    margin-bottom: 1em; /* Add space below the heading */
+    margin-bottom: 1em; 
 
   }
   
@@ -269,8 +293,8 @@ body {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     padding: 60px;
-    flex-wrap: wrap; /* Wrap items to next line if needed */
-      justify-content: flex-start; /* Aligns the skill blocks to the start of the flex container */
+    flex-wrap: wrap; 
+      justify-content: flex-start; 
 
   }
   
@@ -278,26 +302,26 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(25% - 40px); /* Adjust based on how many items per row */
-    margin: 10px; /* Margin for spacing */
+    width: calc(25% - 40px);
+    margin: 10px; 
     text-align: center;
     
   }
   
   .circular-chart {
-    width: 80%; /* SVG will take up 80% of .skill width */
-    height: auto; /* Height adjusts to maintain aspect ratio */
+    width: 80%; 
+    height: auto; 
   }
   
   .skill-title {
     margin-top: 0.5em;
     font-size: 1em;
-    color: white; /* Assuming you want the title in white */
+    color: white; 
   }
   
   .percentage {
-    fill: white; /* SVG text fill color */
-    font-size: 0.7em; /* Sizing of the percentage text */
+    fill: white;
+    font-size: 0.7em; 
   }
   @keyframes load {
     from {
@@ -312,7 +336,7 @@ body {
     transform: rotate(90deg);
     transform-origin: 50% 50%;
     stroke-dasharray: 70;
-    stroke-dashoffset: 70; /* Full length of the circle to start with */
+    stroke-dashoffset: 70; 
     animation: load 2s ease-out forwards;
 }
 
@@ -323,20 +347,20 @@ body {
       'wght' 400,
       'GRAD' 0,
       'opsz' 24;
-    color: white; /* This sets the color of the icon to white */
-    background-color: #2c3e50; /* This sets the background color of the circle */
-    border-radius: 50%; /* This makes the button round */
-    padding: 5px; /* This sizes the circular button */
-    display: inline-flex; /* This allows the button to be inline and use flex properties */
-    align-items: center; /* This vertically centers the icon in the button */
-    justify-content: center; /* This horizontally centers the icon in the button */
-    border: none; /* This removes the border from the button */
-    cursor: pointer; /* This changes the cursor to a pointer when hovering over the button */
-    transition: background-color 0.3s; /* This adds a transition effect when the button background color changes, e.g., on hover */
+    color: white; 
+    background-color: #2c3e50;
+    border-radius: 50%; 
+    padding: 5px; 
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    border: none;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
   }
   
   .material-symbols-outlined:hover {
-    background-color: #848587; /* This changes the background color on hover to a slightly darker shade */
+    background-color: #848587; 
   }
 
 /* Edukacja sekcja css*/
@@ -412,12 +436,12 @@ body {
   
   .timeline-item:nth-child(odd) .timeline-content {
     margin-right: auto;
-    margin-left: -9rem; /* Increase for odd items */
+    margin-left: -9rem; 
   }
   
   .timeline-item:nth-child(even) .timeline-content {
     margin-left: auto;
-    margin-right: -9rem; /* Increase for even items */
+    margin-right: -9rem; 
   }
   
   .timeline-content.highlighted {
@@ -433,7 +457,7 @@ body {
     }
   
     .timeline {
-      margin-left: 30px; /* Adjust line position on smaller screens */
+      margin-left: 30px; 
     }
   
     .timeline-item {
@@ -444,19 +468,18 @@ body {
     .timeline-item:nth-child(odd) .timeline-content {
       width: 100%;
       order: 0;
-      margin-left: 0;
+      margin-left: -2rem;
       margin-right: 0;
       padding: 1.5rem;
     }
   
     .timeline-item::before,
     .timeline-item:nth-child(odd)::before {
-      left: 50%; /* Center the year label for mobile */
+      left: 50%; 
       transform: translateX(-50%) translateY(-50%);
       margin: 0 0 1rem 0;
     }
   }
-  /* Initial state for the animations */
 .timeline::before {
     height: 0;
   }
@@ -467,14 +490,12 @@ body {
     transform: translateY(20px);
   }
   
-  /* Animation for the timeline */
   @keyframes drawVerticalLine {
     to {
       height: 100%;
     }
   }
   
-  /* Animation for the content and year labels */
   @keyframes fadeInUp {
     to {
       opacity: 1;
@@ -482,7 +503,6 @@ body {
     }
   }
   
-  /* Apply animations */
   .timeline::before {
     animation: drawVerticalLine 1s ease forwards;
     animation-delay: 0.5s;
@@ -494,27 +514,24 @@ body {
     animation-delay: var(--animation-order);
   }
   
-  /* CSS Custom Property for animation order */
   .timeline-item:nth-child(1) { --animation-order: 0.75s; }
   .timeline-item:nth-child(2) { --animation-order: 1s; }
   .timeline-item:nth-child(3) { --animation-order: 1.25s; }
-  /* Add as many nth-child rules as you have timeline items */
   
-  /* Hover effect */
   .timeline-item .timeline-content:hover {
     transform: translateY(-10px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   }
   
-  /* Reset animations for mobile */
   @media (max-width: 768px) {
     .timeline::before,
     .timeline-item::before,
     .timeline-item .timeline-content {
-      animation: none;
+      margin: 1rem;
+      
     }
-  
+    
   }
   
   /* Projekt sekcja css */
@@ -542,16 +559,16 @@ body {
   }
   
   .project-item {
-    width: 200px; /* Szerokość obrazu */
-    height: 300px; /* Wysokość obrazu */
+    width: 200px; 
+    height: 300px; 
     margin: 10px;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
     border: 3px solid #c584d0;
-    cursor: pointer; /* Dodano styl kursora */
-    transition: transform 0.3s ease; /* Dodano animację przejścia dla transformacji */
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
   }
   
   .project-item img {
@@ -559,12 +576,12 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 0.3s ease-out; /* Animacja dla powiększenia obrazu */
+    transition: transform 0.3s ease-out; 
     
 
   }
   .project-item:hover img {
-    filter: brightness(90%); /* Przyciemnia obraz po najechaniu */
+    filter: brightness(90%); 
 
   }
   
@@ -580,7 +597,6 @@ body {
     z-index: 9999;
   }
   
-  /* Styl dla ciemnego tła w pełnoekranowym podglądzie po kliknięciu */
   .project-item-fullscreen::after {
     content: '';
     position: fixed;
@@ -593,7 +609,6 @@ body {
   }
   
   .project-item-fullscreen .project-item-title {
-    /* Ukryj tytuł w pełnoekranowym podglądzie */
     display: none;
   }
   
@@ -611,35 +626,35 @@ body {
   }
   
   .contact-section h2 {
-    margin-bottom: 40px; /* Increased space below the heading */
+    margin-bottom: 40px; 
     font-size: 2em;
     margin-bottom: 1em;
   }
   
   .contact-container {
     display: flex;
-    justify-content: space-between; /* Adjusted for equal spacing */
+    justify-content: space-between; 
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
   }
   
   .contact-form {
-    background: #2d3247cf; /* Dark background of the form */
+    background: #2d3247cf; 
     border-radius: 25px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     flex-basis: 45%;
-    margin-left: 20px; /* Space between image and form */
+    margin-left: 20px; 
     border: 3px solid #c584d0;
   }
   
   .contact-image {
     flex-basis: 45%;
-    display: flex; /* Centers the image within this div */
+    display: flex; 
     justify-content: center;
     align-items: center;
-    margin-right: 20px; /* Space between image and form */
+    margin-right: 20px; 
   }
   
   .contact-image img {
@@ -654,31 +669,31 @@ body {
   .form-group input,
   .form-group textarea {
     width: 90%;
-    background: #333; /* Dark fields for input */
-    color: #fff; /* Text color white */
+    background: #333;
+    color: #fff; 
     padding: 10px;
-    border: 1px solid #555; /* Subtle border */
+    border: 1px solid #555; 
     border-radius: 15px;
     margin-top: 5px;
   }
   
   .form-group textarea {
-    height: 100px; /* Larger area for message */
+    height: 100px;
   }
   
   .send-btn {
-    width: 30%; /* Button width full to match inputs */
-    background-color: #c584d0; /* Vibrant color for the button */
+    width: 30%; 
+    background-color: #c584d0; 
     color: white;
     padding: 10px 20px;
     border-radius: 25px;
-    border: none; /* Remove border */
+    border: none; 
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
   .send-btn:hover {
-    background-color: #6b4671; /* Darken on hover */
+    background-color: #6b4671;
   }
   
   @media (max-width: 768px) {
@@ -687,23 +702,23 @@ body {
     }
   
     .contact-image {
-      order: -1; /* Image will come before the form on small screens */
+      order: -1; 
     }
   
     .contact-form,
     .contact-image {
       flex-basis: 100%;
-      margin: 20px 0; /* Spacing around items on small screens */
+      margin: 20px 0; 
     }
   
     .contact-form {
-      margin-left: 0; /* Reset margin for mobile */
-      margin-right: 0; /* Reset margin for mobile */
+      margin-left: 0; 
+      margin-right: 0; 
     }
   }
   
   ::placeholder {
-    color: #b1b1b1; /* Lighter placeholder text for visibility */
+    color: #b1b1b1; 
   }
   @keyframes fadeInLeft {
   from {
@@ -756,5 +771,146 @@ body {
   .nav-links {
       flex-direction: column;
       align-items: center;
+  }
+}
+.hamburger-btn {
+  background: none;
+  border: none;
+  display: none; 
+  cursor: pointer;
+  padding: 10px;
+}
+
+.material-symbols-outlined {
+  font-size: 30px;
+  color: white; 
+}
+
+@media (max-width: 768px) {
+  .hamburger-btn {
+    display: block; 
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    width: 100%; 
+    top: 60px; 
+    left: 0;
+    background: #2c2f4b; 
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links.nav-open {
+    display: flex;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 100%; 
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .container {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 90%; 
+  }
+}
+@media (max-width: 768px) {
+  .skill {
+    width: calc(40% - 10px); 
+    margin: 10px; 
+  }
+  .skills-section{
+    padding: 0px
+  
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .material-symbols-outlined.arrow-button {
+    display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .education-section {
+    margin: 0 auto;
+    padding: 2rem; 
+  }
+
+  .timeline-item {
+    width: 100%;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .timeline-item .timeline-content {
+    width: 100%; 
+    box-sizing: border-box; 
+  }
+
+  .timeline::before,
+  .timeline-item::before {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-left: -2rem;
+    margin-right: 0;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .projects-section {
+      padding: 2rem 7rem 3rem 7rem; 
+      margin-top: 7rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .project-item {
+      width: 80%; 
+      height: 10rem; 
+  }
+}
+@media (max-width: 768px) {
+  .contact-container {
+      flex-direction: column;
+      margin-bottom: 5rem; 
+
+  }
+
+  .contact-image, .contact-form {
+      flex-basis: 100%;
+      margin-bottom: 2rem 
+  }
+
+  .contact-image {
+      order: -1; 
+  }
+}
+@media (min-width: 768px) {
+  .send-btn {
+      width: 30%; 
+  }
+}
+
+@media (max-width: 767px) {
+  .send-btn {
+      width: 100%; 
   }
 }
